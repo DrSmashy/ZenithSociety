@@ -11,7 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using ZenithWebSite.Models;
-using ZenitnDataLib.Models;
+using ZenithDataLib.Models;
 
 namespace ZenithWebSite
 {

@@ -49,8 +49,8 @@ namespace ZenithWebSite.Models
     public class LoginViewModel
     {
         [Required]
-        [EmailAddress]
         [Display(Name = "Email")]
+        [EmailAddress]
         public string Email { get; set; }
 
         [Required]
