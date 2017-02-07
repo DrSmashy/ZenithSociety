@@ -1,7 +1,7 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(ZenithWebSite.Startup))]
+//[assembly: OwinStartupAttribute(typeof(ZenithWebSite.Startup))]
 namespace ZenithWebSite
 {
     public partial class Startup
