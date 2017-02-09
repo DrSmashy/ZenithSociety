@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ZenithDataLib.Model.Event>
+﻿@model IEnumerable<ZenithDataLib.Models.Event>
 
 @{
     ViewBag.Title = "Index";
@@ -21,10 +21,10 @@
             @Html.DisplayNameFor(model => model.EnteredByUsername)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Activity)
+            @Html.DisplayNameFor(model => model.CreationDate)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CreationDate)
+            @Html.DisplayNameFor(model => model.Activity.ActivityDescription)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.IsActive)
@@ -44,10 +44,10 @@
             @Html.DisplayFor(modelItem => item.EnteredByUsername)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Activity)
+            @Html.DisplayFor(modelItem => item.CreationDate)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CreationDate)
+            @Html.DisplayFor(modelItem => item.Activity.ActivityDescription)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.IsActive)

@@ -13,7 +13,7 @@ namespace ZenithDataLib.Models {
         public DateTime EventToDate { get; set; }
         public string EnteredByUsername { get; set; }
 
-        public int Activity { get; set; }
+        public Activity Activity { get; set; }
         public DateTime CreationDate { get; set; }
         public bool IsActive { get; set; }
     }
