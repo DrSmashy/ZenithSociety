@@ -49,15 +49,10 @@
                         @Html.DisplayFor(modelItem => item.CreationDate)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Activity.ActivityDescription)
+                        @Html.DisplayFor(modelItem => item.Activity)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.IsActive)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.EventId }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.EventId }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.EventId })
                     </td>
                 </tr>
             }

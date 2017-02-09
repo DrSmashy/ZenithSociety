@@ -101,6 +101,10 @@
     <Compile Include="Migrations\201702090249221_first10.Designer.cs">
       <DependentUpon>201702090249221_first10.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702090914197_first11.cs" />
+    <Compile Include="Migrations\201702090914197_first11.Designer.cs">
+      <DependentUpon>201702090914197_first11.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Event.cs" />
@@ -144,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702090249221_first10.resx">
       <DependentUpon>201702090249221_first10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702090914197_first11.resx">
+      <DependentUpon>201702090914197_first11.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
