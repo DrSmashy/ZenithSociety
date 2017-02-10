@@ -57,59 +57,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201702080845411_first.cs" />
-    <Compile Include="Migrations\201702080845411_first.Designer.cs">
-      <DependentUpon>201702080845411_first.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702081129388_first1.cs" />
-    <Compile Include="Migrations\201702081129388_first1.Designer.cs">
-      <DependentUpon>201702081129388_first1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702081233089_first2.cs" />
-    <Compile Include="Migrations\201702081233089_first2.Designer.cs">
-      <DependentUpon>201702081233089_first2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702081309486_first3.cs" />
-    <Compile Include="Migrations\201702081309486_first3.Designer.cs">
-      <DependentUpon>201702081309486_first3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702081330345_first4.cs" />
-    <Compile Include="Migrations\201702081330345_first4.Designer.cs">
-      <DependentUpon>201702081330345_first4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702081431491_first5.cs" />
-    <Compile Include="Migrations\201702081431491_first5.Designer.cs">
-      <DependentUpon>201702081431491_first5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702081434042_first6.cs" />
-    <Compile Include="Migrations\201702081434042_first6.Designer.cs">
-      <DependentUpon>201702081434042_first6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702090204448_first7.cs" />
-    <Compile Include="Migrations\201702090204448_first7.Designer.cs">
-      <DependentUpon>201702090204448_first7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702090213578_first8.cs" />
-    <Compile Include="Migrations\201702090213578_first8.Designer.cs">
-      <DependentUpon>201702090213578_first8.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702090220231_first9.cs" />
-    <Compile Include="Migrations\201702090220231_first9.Designer.cs">
-      <DependentUpon>201702090220231_first9.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702090249221_first10.cs" />
-    <Compile Include="Migrations\201702090249221_first10.Designer.cs">
-      <DependentUpon>201702090249221_first10.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702090914197_first11.cs" />
-    <Compile Include="Migrations\201702090914197_first11.Designer.cs">
-      <DependentUpon>201702090914197_first11.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702090935542_first12.cs" />
-    <Compile Include="Migrations\201702090935542_first12.Designer.cs">
-      <DependentUpon>201702090935542_first12.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -118,47 +65,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702080845411_first.resx">
-      <DependentUpon>201702080845411_first.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702081129388_first1.resx">
-      <DependentUpon>201702081129388_first1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702081233089_first2.resx">
-      <DependentUpon>201702081233089_first2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702081309486_first3.resx">
-      <DependentUpon>201702081309486_first3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702081330345_first4.resx">
-      <DependentUpon>201702081330345_first4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702081431491_first5.resx">
-      <DependentUpon>201702081431491_first5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702081434042_first6.resx">
-      <DependentUpon>201702081434042_first6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702090204448_first7.resx">
-      <DependentUpon>201702090204448_first7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702090213578_first8.resx">
-      <DependentUpon>201702090213578_first8.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702090220231_first9.resx">
-      <DependentUpon>201702090220231_first9.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702090249221_first10.resx">
-      <DependentUpon>201702090249221_first10.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702090914197_first11.resx">
-      <DependentUpon>201702090914197_first11.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702090935542_first12.resx">
-      <DependentUpon>201702090935542_first12.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
