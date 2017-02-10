@@ -13,26 +13,28 @@ namespace ZenithDataLib.Migrations {
             AutomaticMigrationsEnabled = false;
         }
 
-        /*private void addRoles(ZenithWebSite.Models.ApplicationDbContext context) {
+       private void addRoles(ZenithDataLib.Models.ApplicationDbContext context) {
             var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
 
             // create the roles if they do not exist
-            if (!context.Roles.Any(r => r.Name == "admin")) {
-                var role = new IdentityRole { Name = "admin" };
+            if (!context.Roles.Any(r => r.Name == "Admin")) {
+                var role = new IdentityRole { Name = "Admin" };
                 roleManager.Create(role);
             }
 
-            if (!context.Roles.Any(r => r.Name == "member")) {
-                var role = new IdentityRole { Name = "member" };
+            if (!context.Roles.Any(r => r.Name == "Member")) {
+                var role = new IdentityRole { Name = "Member" };
                 roleManager.Create(role);
             }
 
-        }*/
+        }
 
         protected override void Seed(ZenithDataLib.Models.ApplicationDbContext context) {
             var manager = new UserManager<ApplicationUser>(
                 new UserStore<ApplicationUser>(
                     new ApplicationDbContext()));
+
+            addRoles(context);
 
             manager.Create(new ApplicationUser() { UserName = "a", Email = "a@a.a", SecurityRole = "Admin" }, "P@$$w0rd");
             manager.Create(new ApplicationUser() { UserName = "m", Email = "m@m.m", SecurityRole = "Member" }, "P@$$w0rd");
