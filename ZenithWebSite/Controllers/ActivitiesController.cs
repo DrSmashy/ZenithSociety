@@ -49,6 +49,7 @@ namespace ZenithSociety.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ActivityId,ActivityDescription,CreationDate")] Activity activity)
         {
+            activity.CreationDate = DateTime.Today;
             if (ModelState.IsValid)
             {
                 db.Activities.Add(activity);

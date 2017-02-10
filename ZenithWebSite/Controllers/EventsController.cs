@@ -39,6 +39,7 @@ namespace ZenithSociety.Controllers
         // GET: Events/Create
         public ActionResult Create()
         {
+            ViewBag.Activities = new SelectList(db.Activities, "ActivityDescription", "ActivityDescription");
             return View();
         }
 
@@ -49,6 +50,8 @@ namespace ZenithSociety.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "EventId,EventFromDate,EventToDate,EnteredByUsername,CreationDate,IsActive")] Event @event)
         {
+            @event.CreationDate = DateTime.Today;
+            @event.EnteredByUsername = User.Identity.Name;
             if (ModelState.IsValid)
             {
                 db.Events.Add(@event);
@@ -71,6 +74,7 @@ namespace ZenithSociety.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.Activities = new SelectList(db.Activities, "ActivityDescription", "ActivityDescription");
             return View(@event);
         }
 

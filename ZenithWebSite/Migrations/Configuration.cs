@@ -46,6 +46,7 @@ namespace ZenithSociety.Migrations {
         }
 
         private void addActivites(ZenithDataLib.Models.ApplicationDbContext context) {
+            context.Database.ExecuteSqlCommand("TRUNCATE TABLE Activities");
 
             if (!context.Activities.Any(a => a.ActivityDescription == "Go-Karting")) {
                 IList<Activity> activities = new List<Activity>();
@@ -67,6 +68,8 @@ namespace ZenithSociety.Migrations {
         }
 
         private void addEvents(ZenithDataLib.Models.ApplicationDbContext context) {
+            context.Database.ExecuteSqlCommand("TRUNCATE TABLE Events");
+
             if (!context.Events.Any(e => e.EventFromDate == new DateTime(2016, 02, 12, 10, 0, 0))) {
                 IList<Event> events = new List<Event>();
 
@@ -112,10 +115,20 @@ namespace ZenithSociety.Migrations {
 
                 events.Add(new Event {
                     EventFromDate = new DateTime(2017, 02, 10, 10, 0, 0),
-                    EventToDate = new DateTime(2017, 02, 10, 10, 0, 0),
+                    EventToDate = new DateTime(2017, 02, 10, 15, 0, 0),
                     EnteredByUsername = "a",
                     ActivityId = context.Activities.Where(x => x.ActivityDescription == "Water Polo").FirstOrDefault().ActivityId,
                     Activity = context.Activities.Where(x => x.ActivityDescription == "Water Polo").FirstOrDefault(),
+                    CreationDate = new DateTime(2017, 01, 11),
+                    IsActive = true
+                });
+
+                events.Add(new Event {
+                    EventFromDate = new DateTime(2017, 02, 10, 15, 0, 0),
+                    EventToDate = new DateTime(2017, 02, 10, 18, 0, 0),
+                    EnteredByUsername = "a",
+                    ActivityId = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault().ActivityId,
+                    Activity = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault(),
                     CreationDate = new DateTime(2017, 01, 11),
                     IsActive = true
                 });

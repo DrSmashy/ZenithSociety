@@ -11,26 +11,17 @@ namespace ZenithWebSite.Controllers {
 
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        private int getWeekNumber(DateTime dt) {
-            var currCulture = CultureInfo.CurrentCulture;
-
-            return currCulture.Calendar.GetWeekOfYear(
-                        dt,
-                        currCulture.DateTimeFormat.CalendarWeekRule,
-                        currCulture.DateTimeFormat.FirstDayOfWeek);
+        private List<Event> getWeekEvents(DateTime date) {
+            DateTime start = date.Date.AddDays(-(int)date.DayOfWeek);
+            DateTime end = start.AddDays(7);
+            var events = db.Events.Where(e => e.EventFromDate >= start
+            & e.EventFromDate < end
+            & e.IsActive == true).ToList();
+            return events;
         }
 
         public ActionResult Index() {
-            var startDay = DateTime.Today.AddDays(-1);
-            var endDay = DateTime.Today.AddDays(7);
-
-            var events = db.Events.Where(e => e.EventFromDate >= startDay
-            & e.EventFromDate < endDay
-            & e.IsActive == true).ToList();
-
-            return View(events);
-
-
+            return View(getWeekEvents(DateTime.Today));
         }
 
         public ActionResult About() {
