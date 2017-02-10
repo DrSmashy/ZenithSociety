@@ -13,6 +13,22 @@ namespace ZenithDataLib.Migrations {
             AutomaticMigrationsEnabled = false;
         }
 
+        /*private void addRoles(ZenithWebSite.Models.ApplicationDbContext context) {
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+
+            // create the roles if they do not exist
+            if (!context.Roles.Any(r => r.Name == "admin")) {
+                var role = new IdentityRole { Name = "admin" };
+                roleManager.Create(role);
+            }
+
+            if (!context.Roles.Any(r => r.Name == "member")) {
+                var role = new IdentityRole { Name = "member" };
+                roleManager.Create(role);
+            }
+
+        }*/
+
         protected override void Seed(ZenithDataLib.Models.ApplicationDbContext context) {
             var manager = new UserManager<ApplicationUser>(
                 new UserStore<ApplicationUser>(

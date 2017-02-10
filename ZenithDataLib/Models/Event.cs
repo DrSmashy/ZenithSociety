@@ -15,7 +15,8 @@ namespace ZenithDataLib.Models {
         public string EnteredByUsername { get; set; }
 
         public int ActivityId { get; set; }
-        public Activity Activity { get; set; }
+        [ForeignKey("ActivityId")]
+        public virtual Activity Activity { get; set; }
 
         public DateTime CreationDate { get; set; }
         public bool IsActive { get; set; }

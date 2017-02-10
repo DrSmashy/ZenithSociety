@@ -14,45 +14,21 @@
         <table class="table">
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.EventFromDate)
+                    Event Time
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.EventToDate)
+                    Activity
                 </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.EnteredByUsername)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.CreationDate)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Activity.ActivityDescription)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.IsActive)
-                </th>
-                <th></th>
             </tr>
 
             @foreach (var item in Model) {
                 <tr>
                     <td>
-                        @Html.DisplayFor(modelItem => item.EventFromDate)
+                        @Html.DisplayFor(modelItem => item.EventFromDate) - @Html.DisplayFor(modelItem => item.EventToDate)
                     </td>
+ 
                     <td>
-                        @Html.DisplayFor(modelItem => item.EventToDate)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.EnteredByUsername)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.CreationDate)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Activity)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.IsActive)
+                        @Html.DisplayFor(modelItem => item.Activity.ActivityDescription)
                     </td>
                 </tr>
             }

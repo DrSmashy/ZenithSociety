@@ -27,7 +27,10 @@ namespace ZenithWebSite.Controllers {
             var events = db.Events.Where(e => e.EventFromDate >= startDay
             & e.EventFromDate < endDay
             & e.IsActive == true).ToList();
+
             return View(events);
+
+
         }
 
         public ActionResult About() {
