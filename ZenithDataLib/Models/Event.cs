@@ -11,22 +11,29 @@ namespace ZenithDataLib.Models {
         [Key]
         [Display(Name = "Event")]
         public int EventId { get; set; }
+
         [Display(Name = "Start Date")]
-        [DataType(DataType.DateTime)]
+        [Required]
         public DateTime EventFromDate { get; set; }
+
         [Display(Name = "End Date")]
-        [DataType(DataType.DateTime)]
+        [Required]
         public DateTime EventToDate { get; set; }
+
         [Display(Name = "Created By")]
         public string EnteredByUsername { get; set; }
 
         [Display(Name = "Activity")]
+        [Required]
         public int ActivityId { get; set; }
+
         [ForeignKey("ActivityId")]
         [Display(Name = "Activity")]
         public virtual Activity Activity { get; set; }
+
         [Display(Name = "Creation Date")]
         public DateTime CreationDate { get; set; }
+
         [Display(Name = "Is Active")]
         public bool IsActive { get; set; }
     }
