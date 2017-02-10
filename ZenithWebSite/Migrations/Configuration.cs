@@ -108,6 +108,56 @@ namespace ZenithSociety.Migrations {
                 });
 
                 events.Add(new Event {
+                    EventFromDate = new DateTime(2017, 02, 4, 15, 0, 0),
+                    EventToDate = new DateTime(2017, 02, 4, 18, 0, 0),
+                    EnteredByUsername = "a",
+                    ActivityId = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault().ActivityId,
+                    Activity = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault(),
+                    CreationDate = new DateTime(2017, 01, 11),
+                    IsActive = true
+                });
+
+                events.Add(new Event {
+                    EventFromDate = new DateTime(2017, 02, 5, 15, 0, 0),
+                    EventToDate = new DateTime(2017, 02, 5, 18, 0, 0),
+                    EnteredByUsername = "a",
+                    ActivityId = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault().ActivityId,
+                    Activity = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault(),
+                    CreationDate = new DateTime(2017, 01, 11),
+                    IsActive = true
+                });
+
+                events.Add(new Event {
+                    EventFromDate = new DateTime(2017, 02, 6, 15, 0, 0),
+                    EventToDate = new DateTime(2017, 02, 6, 18, 0, 0),
+                    EnteredByUsername = "a",
+                    ActivityId = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault().ActivityId,
+                    Activity = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault(),
+                    CreationDate = new DateTime(2017, 01, 11),
+                    IsActive = true
+                });
+
+                events.Add(new Event {
+                    EventFromDate = new DateTime(2017, 02, 7, 15, 0, 0),
+                    EventToDate = new DateTime(2017, 02, 7, 18, 0, 0),
+                    EnteredByUsername = "a",
+                    ActivityId = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault().ActivityId,
+                    Activity = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault(),
+                    CreationDate = new DateTime(2017, 01, 11),
+                    IsActive = true
+                });
+
+                events.Add(new Event {
+                    EventFromDate = new DateTime(2017, 02, 8, 15, 0, 0),
+                    EventToDate = new DateTime(2017, 02, 8, 18, 0, 0),
+                    EnteredByUsername = "a",
+                    ActivityId = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault().ActivityId,
+                    Activity = context.Activities.Where(x => x.ActivityDescription == "Competitive Vaping").FirstOrDefault(),
+                    CreationDate = new DateTime(2017, 01, 11),
+                    IsActive = true
+                });
+
+                events.Add(new Event {
                     EventFromDate = new DateTime(2017, 02, 09, 13, 0, 0),
                     EventToDate = new DateTime(2017, 02, 09, 15, 30, 0),
                     EnteredByUsername = "a",

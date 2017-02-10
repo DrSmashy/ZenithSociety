@@ -12,7 +12,7 @@ namespace ZenithWebSite.Controllers {
         private ApplicationDbContext db = new ApplicationDbContext();
 
         private List<Event> getWeekEvents(DateTime date) {
-            DateTime start = date.Date.AddDays(-(int)date.DayOfWeek);
+            DateTime start = date.Date.AddDays(-(int)date.DayOfWeek + 1);
             DateTime end = start.AddDays(7);
             var events = db.Events.Where(e => e.EventFromDate >= start
             & e.EventFromDate < end
