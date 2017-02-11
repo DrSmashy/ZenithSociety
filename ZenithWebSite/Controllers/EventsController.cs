@@ -39,7 +39,7 @@ namespace ZenithSociety.Controllers
         // GET: Events/Create
         public ActionResult Create()
         {
-            ViewBag.Activities = new SelectList(db.Activities, "ActivityDescription", "ActivityDescription");
+            ViewBag.Activities = new SelectList(db.Activities, "ActivityId", "ActivityDescription");
             return View();
         }
 
@@ -48,8 +48,8 @@ namespace ZenithSociety.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "EventId,EventFromDate,EventToDate,EnteredByUsername,CreationDate,IsActive")] Event @event)
-        {
+        public ActionResult Create([Bind(Include = "EventId,EventFromDate,EventToDate,EnteredByUsername,CreationDate,IsActive,ActivityId,Activity")] Event @event)
+        {   
             @event.CreationDate = DateTime.Today;
             @event.EnteredByUsername = User.Identity.Name;
             if (ModelState.IsValid)
@@ -83,7 +83,7 @@ namespace ZenithSociety.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "EventId,EventFromDate,EventToDate,EnteredByUsername,CreationDate,IsActive")] Event @event)
+        public ActionResult Edit([Bind(Include = "EventId,EventFromDate,EventToDate,EnteredByUsername,CreationDate,IsActive,ActivityId,Activity")] Event @event)
         {
             if (ModelState.IsValid)
             {
