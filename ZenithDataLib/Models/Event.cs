@@ -23,11 +23,11 @@ namespace ZenithDataLib.Models {
         [Display(Name = "Created By")]
         public string EnteredByUsername { get; set; }
 
-        [Display(Name = "Activity")]
+        [Display(Name = "ActivityId")]
         [Required]
         public int ActivityId { get; set; }
 
-        [ForeignKey("ActivityId")]
+
         [Display(Name = "Activity")]
         public virtual Activity Activity { get; set; }
 
