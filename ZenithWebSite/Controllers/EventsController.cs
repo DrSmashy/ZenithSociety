@@ -53,7 +53,7 @@ namespace ZenithSociety.Controllers
             @event.CreationDate = DateTime.Today;
             @event.EnteredByUsername = User.Identity.Name;
             if (ModelState.IsValid)
-            {
+            {   
                 db.Events.Add(@event);
                 db.SaveChanges();
                 return RedirectToAction("Index");
