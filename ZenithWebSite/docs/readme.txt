@@ -1,11 +1,11 @@
-Zenith Society Assignment 1
+Zenith Society, COMP4870 Assignment 1
 Johnathan Robson,
 A00933750,
 johnathan.g.robson@gmail.com
 
 Niko Lauron,
-A00,
-,
+A00923196,
+nlauron@telus.net,
 http://zenithsociety-nj.azurewebsites.net/
 
 Major Challenges:
