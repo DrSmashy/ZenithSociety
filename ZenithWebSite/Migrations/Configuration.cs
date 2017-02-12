@@ -10,7 +10,7 @@ namespace ZenithSociety.Migrations {
 
     internal sealed class Configuration : DbMigrationsConfiguration<ZenithDataLib.Models.ApplicationDbContext> {
         public Configuration() {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         private void addRoles(ZenithDataLib.Models.ApplicationDbContext context) {

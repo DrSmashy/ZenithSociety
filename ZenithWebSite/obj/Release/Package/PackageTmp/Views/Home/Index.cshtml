@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ZenithDataLib.Models.Event>
+@{
+    ViewBag.Title = "Zenith Home";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <p class="text-center" style="font-weight:bold">Welcome to the Zenith Society</p>
+        <p class="text-center" style="font-weight:bold">Events this week:</p>
+        <table class="table">
+            @{var list = Model.GroupBy(x => x.EventFromDate.Date).Select(x => x.First()).ToList(); } 
+            @foreach (var date in list) {
+                <tr style="background:cadetblue; font-weight:bold">
+                    <td>
+                        @date.EventFromDate.Date.ToString("dddd") @date.EventFromDate.Date.ToString("D")
+                    </td>
+                    <td></td>
+                </tr>
+                foreach (var item in Model.Where(e => e.EventFromDate.Date.ToString() == date.EventFromDate.Date.ToString())) {
+                    <tr>
+                        <td>
+                            @item.EventFromDate.ToString("hh:mm tt") - @item.EventToDate.ToString("hh:mm tt")
+                        </td>
+                        <td>
+                            @item.Activity.ActivityDescription
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</div>

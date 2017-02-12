@@ -176,21 +176,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702101310381_first.cs" />
-    <Compile Include="Migrations\201702101310381_first.Designer.cs">
-      <DependentUpon>201702101310381_first.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702101408167_first1.cs" />
-    <Compile Include="Migrations\201702101408167_first1.Designer.cs">
-      <DependentUpon>201702101408167_first1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702101600262_first2.cs" />
-    <Compile Include="Migrations\201702101600262_first2.Designer.cs">
-      <DependentUpon>201702101600262_first2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702110818565_first3.cs" />
-    <Compile Include="Migrations\201702110818565_first3.Designer.cs">
-      <DependentUpon>201702110818565_first3.cs</DependentUpon>
+    <Compile Include="Migrations\201702120637320_first.cs" />
+    <Compile Include="Migrations\201702120637320_first.Designer.cs">
+      <DependentUpon>201702120637320_first.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -297,6 +285,8 @@
     <Content Include="Content\bootstrap\alerts.less" />
     <Content Include="Content\_bootstrap-datetimepicker.less" />
     <Content Include="Content\bootstrap-datetimepicker-build.less" />
+    <None Include="Properties\PublishProfiles\zenithsociety-nj - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\zenithsociety-nj - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
@@ -365,20 +355,6 @@
     <Content Include="Views\Events\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702101310381_first.resx">
-      <DependentUpon>201702101310381_first.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702101408167_first1.resx">
-      <DependentUpon>201702101408167_first1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702101600262_first2.resx">
-      <DependentUpon>201702101600262_first2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702110818565_first3.resx">
-      <DependentUpon>201702110818565_first3.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
@@ -389,6 +365,11 @@
       <Project>{d4784746-fd1f-49f0-a28c-e6ae40b08afd}</Project>
       <Name>ZenithDataLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702120637320_first.resx">
+      <DependentUpon>201702120637320_first.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

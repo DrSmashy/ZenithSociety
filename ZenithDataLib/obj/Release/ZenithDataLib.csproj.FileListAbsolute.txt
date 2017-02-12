@@ -1,0 +1,14 @@
+c:\git\ZenithSociety\ZenithDataLib\bin\Release\ZenithDataLib.dll.config
+c:\git\ZenithSociety\ZenithDataLib\bin\Release\ZenithDataLib.dll
+c:\git\ZenithSociety\ZenithDataLib\bin\Release\ZenithDataLib.pdb
+c:\git\ZenithSociety\ZenithDataLib\bin\Release\EntityFramework.dll
+c:\git\ZenithSociety\ZenithDataLib\bin\Release\EntityFramework.SqlServer.dll
+c:\git\ZenithSociety\ZenithDataLib\bin\Release\Microsoft.AspNet.Identity.Core.dll
+c:\git\ZenithSociety\ZenithDataLib\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\git\ZenithSociety\ZenithDataLib\bin\Release\EntityFramework.xml
+c:\git\ZenithSociety\ZenithDataLib\bin\Release\EntityFramework.SqlServer.xml
+c:\git\ZenithSociety\ZenithDataLib\bin\Release\Microsoft.AspNet.Identity.Core.xml
+c:\git\ZenithSociety\ZenithDataLib\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\git\ZenithSociety\ZenithDataLib\obj\Release\ZenithDataLib.csprojResolveAssemblyReference.cache
+c:\git\ZenithSociety\ZenithDataLib\obj\Release\ZenithDataLib.dll
+c:\git\ZenithSociety\ZenithDataLib\obj\Release\ZenithDataLib.pdb
